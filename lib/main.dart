@@ -1,7 +1,6 @@
+import "package:flutter/material.dart";
+import "checkaroo_app.dart";
 
-import 'package:checkaroo/checkaroo_app.dart';
-import 'package:flutter/material.dart';
-
-void main(){
-  runApp(CheckarooApp());
+void main() {
+  runApp(const CheckarooApp());
 }
