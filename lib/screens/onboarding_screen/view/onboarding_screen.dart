@@ -27,7 +27,7 @@ class OnboardingScreen extends StatelessWidget {
                 ),
                 padding: const EdgeInsets.all(16),
                 child: const Placeholder(
-                  fallbackHeight: 350,
+                  fallbackHeight: 380,
                   color: Colors.white54,
                 ),
               ),
@@ -51,7 +51,7 @@ class OnboardingScreen extends StatelessWidget {
                 ),
               ),
 
-              const Spacer(),
+              const Gap(20),
 
               Button(
                 onPressed: () {
