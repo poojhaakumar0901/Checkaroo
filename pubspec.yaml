@@ -1,6 +1,6 @@
 name: checkaroo
 description: "A new Flutter project."
-publish_to: 'none' 
+publish_to: 'none'
 version: 1.0.0+1
 
 environment:
@@ -10,6 +10,7 @@ dependencies:
   cupertino_icons: ^1.0.8
   flutter:
     sdk: flutter
+  gap: ^3.0.1
   get: ^4.7.2
 
 dev_dependencies:
@@ -19,18 +20,19 @@ dev_dependencies:
 
 flutter:
   uses-material-design: true
+
+  assets:
+    - assets/fonts/
+
   fonts:
     - family: Lexend
       fonts:
-        - asset: assets/fonts/lexend/Lexend-Black.ttf
-        - asset: assets/fonts/lexend/Lexend-Bold.ttf
-        - asset: assets/fonts/lexend/Lexend-ExtraBold.ttf
-        - asset: assets/fonts/lexend/Lexend-ExtraLight.ttf
-        - asset: assets/fonts/lexend/Lexend-Light.ttf
-        - asset: assets/fonts/lexend/Lexend-Regular.ttf
-        - asset: assets/fonts/lexend/Lexend-Medium.ttf
-        - asset: assets/fonts/lexend/Lexend-SemiBold.ttf
-        - asset: assets/fonts/lexend/Lexend-Thin.ttf
-  
-  
-  
+        - asset: assets/fonts/Lexend-Black.ttf
+        - asset: assets/fonts/Lexend-Bold.ttf
+        - asset: assets/fonts/Lexend-ExtraBold.ttf
+        - asset: assets/fonts/Lexend-ExtraLight.ttf
+        - asset: assets/fonts/Lexend-Light.ttf
+        - asset: assets/fonts/Lexend-Regular.ttf
+        - asset: assets/fonts/Lexend-Medium.ttf
+        - asset: assets/fonts/Lexend-SemiBold.ttf
+        - asset: assets/fonts/Lexend-Thin.ttf

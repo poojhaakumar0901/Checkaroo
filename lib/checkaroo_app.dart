@@ -9,8 +9,11 @@ class CheckarooApp extends StatelessWidget {
 
   @override
   Widget build(final BuildContext context) => GetMaterialApp(
+    debugShowCheckedModeBanner: false,
+    title: "Checkaroo",
     theme: AppTheme.lightTheme,
     darkTheme: AppTheme.darkTheme,
+    initialRoute: AppRoutes.onboarding,
     getPages: AppRoutes.pages,
   );
 }
