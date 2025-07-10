@@ -1,10 +1,12 @@
 import "package:flutter/material.dart";
 import "package:gap/gap.dart";
 import "../../../config/appstring.dart";
+import "../../../config/constants.dart";
 import "../../../widgets/button.dart";
 
 class OnboardingScreen extends StatelessWidget {
   const OnboardingScreen({super.key});
+  static const String route = "/onboarding";
 
   @override
   Widget build(final BuildContext context) {
@@ -13,7 +15,7 @@ class OnboardingScreen extends StatelessWidget {
     return Scaffold(
       body: SafeArea(
         child: Padding(
-          padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 40),
+          padding: AppPadding.screen,
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: <Widget>[
@@ -25,12 +27,12 @@ class OnboardingScreen extends StatelessWidget {
                 ),
                 padding: const EdgeInsets.all(16),
                 child: const Placeholder(
-                  fallbackHeight: 280,
+                  fallbackHeight: 350,
                   color: Colors.white54,
                 ),
               ),
 
-              const Gap(28),
+              const Gap(20),
 
               Text(
                 AppString.onBoardingHeading,
@@ -44,14 +46,14 @@ class OnboardingScreen extends StatelessWidget {
               Text(
                 AppString.onBoardingContent,
                 style: textTheme.bodyMedium?.copyWith(
-                  //fontWeight: FontWeight.w600,
+                  color: const Color(0xFF444444),
                   height: 1.5,
                 ),
               ),
 
               const Spacer(),
 
-              CommonButton(
+              Button(
                 onPressed: () {
                   // Navigate to sign-in screen here
                 },
@@ -64,13 +66,13 @@ class OnboardingScreen extends StatelessWidget {
                 child: RichText(
                   text: TextSpan(
                     text: AppString.getStartedDialog,
-                    style: textTheme.bodyMedium?.copyWith(
+                    style: textTheme.bodyLarge?.copyWith(
                       fontWeight: FontWeight.bold,
                     ),
                     children: <TextSpan>[
                       TextSpan(
                         text: AppString.signIn,
-                        style: textTheme.bodyMedium?.copyWith(
+                        style: textTheme.bodyLarge?.copyWith(
                           fontWeight: FontWeight.bold,
                         ),
                       ),
