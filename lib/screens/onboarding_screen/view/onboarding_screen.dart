@@ -53,7 +53,12 @@ class OnboardingScreen extends StatelessWidget {
                 width: double.infinity,
                 child: TextButton(
                   onPressed: () {},
-                  child: const Text(AppString.getStarted),
+                  child: Text(
+                    AppString.getStarted,
+                    style: context.textTheme.bodyMedium?.copyWith(
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
                 ),
               ),
               const Gap(12),
