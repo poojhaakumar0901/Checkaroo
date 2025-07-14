@@ -16,7 +16,7 @@ class OnboardingScreen extends StatelessWidget {
     return Scaffold(
       body: SafeArea(
         child: Padding(
-          padding: AppPadding.screen,
+          padding: AppConstants.screenPadding,
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: <Widget>[
@@ -42,10 +42,7 @@ class OnboardingScreen extends StatelessWidget {
               Text(
                 AppString.onBoardingContent,
                 style: context.theme.textTheme.bodyMedium?.copyWith(
-                  color:
-                      context.theme.brightness == Brightness.dark
-                          ? Colors.white
-                          : const Color(0xFF444444),
+                  height: 1.5,
                 ),
               ),
               const Gap(20),
@@ -54,7 +51,7 @@ class OnboardingScreen extends StatelessWidget {
                 child: TextButton(
                   onPressed: () {},
                   child: Text(
-                    AppString.getStarted,
+                    AppString.onBoardingStarted,
                     style: context.textTheme.bodyMedium?.copyWith(
                       fontWeight: FontWeight.bold,
                     ),
@@ -64,7 +61,7 @@ class OnboardingScreen extends StatelessWidget {
               const Gap(12),
               Center(
                 child: Text(
-                  AppString.getStartedDialog,
+                  AppString.onBoardingDialog,
                   style: context.textTheme.bodyMedium?.copyWith(
                     fontWeight: FontWeight.bold,
                   ),

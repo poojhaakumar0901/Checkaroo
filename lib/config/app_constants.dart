@@ -1,5 +1,7 @@
 import "package:flutter/material.dart";
 
-class AppPadding {
-  static const EdgeInsets screen = EdgeInsets.symmetric(horizontal: 20);
+class AppConstants {
+  const AppConstants._();
+
+  static const EdgeInsets screenPadding = EdgeInsets.all(20);
 }

@@ -12,7 +12,7 @@ class AppTheme {
     useMaterial3: true,
 
     textTheme: const TextTheme(
-      bodyMedium: TextStyle(fontSize: 15, height: 1.5),
+      bodyMedium: TextStyle(fontSize: 15, color: Color(0xFF444444)),
     ),
 
     textButtonTheme: TextButtonThemeData(
@@ -28,6 +28,7 @@ class AppTheme {
 
   static final ThemeData darkTheme = ThemeData(
     brightness: Brightness.dark,
+    scaffoldBackgroundColor: const Color(0xFF121212),
     fontFamily: "Lexend",
     colorScheme: ColorScheme.fromSeed(
       seedColor: const Color(0xFFFFD43B),
@@ -36,19 +37,20 @@ class AppTheme {
     useMaterial3: true,
 
     textTheme: const TextTheme(
-      bodyMedium: TextStyle(fontSize: 15, height: 1.5),
+      bodyMedium: TextStyle(fontSize: 15, color: Colors.white),
     ),
 
     textButtonTheme: TextButtonThemeData(
       style: TextButton.styleFrom(
         backgroundColor: const Color(0xFFFFD43B),
         foregroundColor: Colors.black,
-        textStyle: const TextStyle(fontWeight: FontWeight.bold),
+        textStyle: const TextStyle(fontWeight: FontWeight.bold, fontSize: 18),
         padding: const EdgeInsets.symmetric(vertical: 14),
         shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(8)),
       ),
     ),
   );
+
   static SystemUiOverlayStyle overlayStyle(
     final Brightness brightness,
     final Color scaffoldColor,
