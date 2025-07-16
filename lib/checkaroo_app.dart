@@ -1,5 +1,4 @@
 import "package:flutter/material.dart";
-import "package:flutter/services.dart";
 import "package:get/get.dart";
 
 import "config/routes.dart";
@@ -17,14 +16,5 @@ class CheckarooApp extends StatelessWidget {
     darkTheme: AppTheme.darkTheme,
     initialRoute: OnboardingScreen.route,
     getPages: AppRoutes.pages,
-    builder: (final BuildContext context, final Widget? child) {
-      SystemChrome.setSystemUIOverlayStyle(
-        AppTheme.overlayStyle(
-          Theme.of(context).brightness,
-          Theme.of(context).scaffoldBackgroundColor,
-        ),
-      );
-      return child!;
-    },
   );
 }

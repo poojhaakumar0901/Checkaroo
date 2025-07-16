@@ -2,8 +2,8 @@ import "package:flutter/material.dart";
 import "package:gap/gap.dart";
 import "package:get/get.dart";
 
-import "../../../config/app_constants.dart";
-import "../../../config/appstring.dart";
+import "../../../config/constants.dart";
+import "../../../config/strings.dart";
 
 class OnboardingScreen extends StatelessWidget {
   const OnboardingScreen({super.key});
@@ -16,7 +16,9 @@ class OnboardingScreen extends StatelessWidget {
     return Scaffold(
       body: SafeArea(
         child: Padding(
-          padding: AppConstants.screenPadding,
+          padding: EdgeInsets.symmetric(
+            horizontal: AppConstants.kScreenPadding,
+          ),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: <Widget>[
@@ -43,12 +45,13 @@ class OnboardingScreen extends StatelessWidget {
                 AppString.onBoardingContent,
                 style: context.theme.textTheme.bodyMedium?.copyWith(
                   height: 1.5,
+                  fontSize: 15,
                 ),
               ),
               const Gap(20),
               SizedBox(
                 width: double.infinity,
-                child: TextButton(
+                child: ElevatedButton(
                   onPressed: () {},
                   child: Text(
                     AppString.onBoardingStarted,
@@ -58,6 +61,7 @@ class OnboardingScreen extends StatelessWidget {
                   ),
                 ),
               ),
+
               const Gap(12),
               Center(
                 child: Text(

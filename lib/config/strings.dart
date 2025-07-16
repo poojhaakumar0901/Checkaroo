@@ -1,10 +1,9 @@
 // ignore_for_file: lines_longer_than_80_chars
 // RULES to be follow
 // camelCase for the lables.
-// UPPER_SNAKE_CASE for API_KEY
 //[screen/feature][widget/element/intent] use camelCase
 // Group strings per screen/feature
-
+//For common text name the veriable as Eg: helloText = "Hello"
 class AppString {
   //ONBOARDING
   static const String onBoardingHeading = "Productive Mind";

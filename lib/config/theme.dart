@@ -11,14 +11,12 @@ class AppTheme {
     colorScheme: ColorScheme.fromSeed(seedColor: const Color(0xFFFFD43B)),
     useMaterial3: true,
 
-    textTheme: const TextTheme(
-      bodyMedium: TextStyle(fontSize: 15, color: Color(0xFF444444)),
-    ),
+    textTheme: const TextTheme(bodyMedium: TextStyle(color: Color(0xFF444444))),
 
-    textButtonTheme: TextButtonThemeData(
-      style: TextButton.styleFrom(
+    elevatedButtonTheme: ElevatedButtonThemeData(
+      style: ElevatedButton.styleFrom(
         backgroundColor: const Color(0xFFFFD43B),
-        foregroundColor: Colors.black,
+        foregroundColor: const Color(0xFF212529),
         textStyle: const TextStyle(fontWeight: FontWeight.bold, fontSize: 18),
         padding: const EdgeInsets.symmetric(vertical: 14),
         shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(8)),
@@ -36,9 +34,7 @@ class AppTheme {
     ),
     useMaterial3: true,
 
-    textTheme: const TextTheme(
-      bodyMedium: TextStyle(fontSize: 15, color: Colors.white),
-    ),
+    textTheme: const TextTheme(bodyMedium: TextStyle(color: Colors.white)),
 
     textButtonTheme: TextButtonThemeData(
       style: TextButton.styleFrom(
