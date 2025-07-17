@@ -6,7 +6,7 @@ class AppRoutes {
 
   static const String onboarding = "/onboarding";
 
-  static final List<GetPage<dynamic>> pages = <GetPage<dynamic>>[
-    GetPage<dynamic>(name: onboarding, page: OnboardingScreen.new),
+  static final List<GetPage<void>> pages = <GetPage<void>>[
+    GetPage<void>(name: onboarding, page: OnboardingScreen.new),
   ];
 }
