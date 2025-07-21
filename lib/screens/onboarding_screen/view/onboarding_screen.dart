@@ -52,13 +52,10 @@ class OnboardingScreen extends StatelessWidget {
               SizedBox(
                 width: double.infinity,
                 child: ElevatedButton(
-                  onPressed: () {},
-                  child: Text(
-                    AppString.onBoardingStarted,
-                    style: context.textTheme.bodyMedium?.copyWith(
-                      fontWeight: FontWeight.bold,
-                    ),
-                  ),
+                  onPressed: () async {
+                    await Get.toNamed("/signin");
+                  },
+                  child: const Text(AppString.onBoardingStarted),
                 ),
               ),
 
@@ -68,6 +65,7 @@ class OnboardingScreen extends StatelessWidget {
                   AppString.onBoardingDialog,
                   style: context.textTheme.bodyMedium?.copyWith(
                     fontWeight: FontWeight.bold,
+                    color: const Color(0xFF212529),
                   ),
                 ),
               ),
