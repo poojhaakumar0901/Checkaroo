@@ -7,7 +7,7 @@ class SignInController extends GetxController {
 
   Future<void> signIn() async {
     final String email = emailController.text.trim();
-    final String password = passwordController.text;
+    final String password = passwordController.text.trim();
 
     if (email.isEmpty || password.isEmpty) {
       Get.snackbar("Error", "Please enter email and password");
@@ -15,5 +15,12 @@ class SignInController extends GetxController {
     }
 
     Get.snackbar("Info", "Email: $email\nPassword: $password");
+  }
+
+  @override
+  void onClose() {
+    emailController.dispose();
+    passwordController.dispose();
+    super.onClose();
   }
 }

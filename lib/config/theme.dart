@@ -20,6 +20,7 @@ class AppTheme {
         textStyle: const TextStyle(fontWeight: FontWeight.bold, fontSize: 18),
         padding: const EdgeInsets.symmetric(vertical: 14),
         shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(8)),
+        elevation: 0,
       ),
     ),
   );
@@ -43,6 +44,7 @@ class AppTheme {
         textStyle: const TextStyle(fontWeight: FontWeight.bold, fontSize: 18),
         padding: const EdgeInsets.symmetric(vertical: 14),
         shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(8)),
+        elevation: 0,
       ),
     ),
   );
