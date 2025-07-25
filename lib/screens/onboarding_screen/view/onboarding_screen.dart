@@ -59,7 +59,6 @@ class OnboardingScreen extends StatelessWidget {
                 AppString.onBoardingDialog,
                 style: context.textTheme.bodyMedium?.copyWith(
                   fontWeight: FontWeight.bold,
-                  color: const Color(0xFF212529),
                 ),
               ),
             ),
