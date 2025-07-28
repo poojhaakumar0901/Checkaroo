@@ -20,6 +20,7 @@ class AppTheme {
         textStyle: const TextStyle(fontWeight: FontWeight.bold, fontSize: 18),
         padding: const EdgeInsets.symmetric(vertical: 14),
         shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(8)),
+        elevation: 0,
       ),
     ),
   );
@@ -36,13 +37,14 @@ class AppTheme {
 
     textTheme: const TextTheme(bodyMedium: TextStyle(color: Colors.white)),
 
-    textButtonTheme: TextButtonThemeData(
-      style: TextButton.styleFrom(
+    elevatedButtonTheme: ElevatedButtonThemeData(
+      style: ElevatedButton.styleFrom(
         backgroundColor: const Color(0xFFFFD43B),
-        foregroundColor: Colors.black,
+        foregroundColor: const Color(0xFF212529),
         textStyle: const TextStyle(fontWeight: FontWeight.bold, fontSize: 18),
         padding: const EdgeInsets.symmetric(vertical: 14),
         shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(8)),
+        elevation: 0,
       ),
     ),
   );
